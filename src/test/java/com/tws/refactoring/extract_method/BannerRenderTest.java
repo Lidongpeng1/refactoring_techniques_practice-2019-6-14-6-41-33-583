@@ -9,7 +9,7 @@ import java.io.PrintStream;
 
 import static org.junit.Assert.*;
 
-public class OwingPrinterTest {
+public class BannerRenderTest {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
 
@@ -25,9 +25,8 @@ public class OwingPrinterTest {
 
     @Test
     public void printOwing() {
-        System.out.print("hello");
-        assertEquals("hello", outContent.toString());
+//        System.out.print("hello");
+//        assertEquals("hello", outContent.toString());
     }
-
 
 }
